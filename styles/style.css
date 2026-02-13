@@ -219,7 +219,7 @@ ol {
 }
 
 .search-form__label:hover {
-  cursor: pointer
+  cursor: pointer;
 }
 
 input[type="text"] {
@@ -247,10 +247,6 @@ input[type="text"] {
   outline-offset: 2px;
 }
 
-.search-form__label:hover {
-  text-decoration: underline;
-}
-
 .search-form__pseudo-checkbox {
   display: block;
   width: 19px;
@@ -266,6 +262,10 @@ input[type="text"] {
   content: "";
   background-color: #fff;
   opacity: 0;
+}
+
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
